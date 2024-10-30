@@ -11,7 +11,7 @@ module.exports = {
         lightGray: '#d3d3d3',
         gray: '#778899',
         darkGray: '#464d53',
-        darkDarkGray: '#363d42',
+        darkdarkGray: '#363d42',
         pink: '#fa8072',
       },
     },

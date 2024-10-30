@@ -4,7 +4,7 @@ import Image from 'next/image';
 function Header() {
   return (
     <div className='flex justify-between items-center'>
-      <Image src='/logo.png' alt='logo' width={100} height={60} />
+      <Image src='/logo.png' alt='logo' width={100} height={60} className='w-[7rem]' />
 
       <div>
         <ul className='flex gap-[2rem] text-white'>

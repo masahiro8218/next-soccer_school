@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+main {
+  background-image: url('/bgimageglobalscss.png');
+  background-color: #483d8b;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  transform: translate3d(0, 0, 0);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

@@ -1,7 +1,10 @@
 import React from 'react';
 
-const Reasons = () => {
-  return <div>Reasons</div>;
-};
+function Reasons() {
+  return (
+    <div>
+    </div>
+  )
+}
 
 export default Reasons;

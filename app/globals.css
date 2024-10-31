@@ -15,3 +15,14 @@ main {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.stroke-text {
+  color: transparent;
+  font-family: M_PLUS_2, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.normal-cace {
+  text-transform: none;
+}

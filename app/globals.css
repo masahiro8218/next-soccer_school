@@ -26,3 +26,11 @@ main {
 .normal-cace {
   text-transform: none;
 }
+
+.blur {
+  background: #ff8c00;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: -20;
+}

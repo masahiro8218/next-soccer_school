@@ -3,6 +3,8 @@
 import React from 'react';
 import Header from './Header';
 import ReactCountUp from 'react-countup';
+import { MdOutlineSportsTennis } from 'react-icons/md';
+import Image from 'next/image';
 
 function Hero() {
   return (
@@ -78,9 +80,24 @@ function Hero() {
       {/* 右 */}
       <div className='col-span-4 relative bg-gradient-to-br from-pink via-pink to-yellow-500'>
         {/* レート */}
-        
+        <div
+          className='absolute flex flex-col gap-[1rem] bg-darkGray w-fit p-[1rem]
+                        text-start rounded-md right-[4rem] top-[8rem]'
+        >
+          <MdOutlineSportsTennis className='text-pink text-5xl' />
+          <span className='text-gray'>UTR Rate</span>
+          <span className='text-white text-2xl'>9.5</span>
+        </div>
         {/* メイン写真 */}
+        <Image
+          src={'/heroImg.png'}
+          alt='heroImg'
+          width={300}
+          height={600}
+          className='absolute right-[13rem] top-[13rem] w-[25rem]'
+        />
         {/* 背景写真 */}
+        <img src='/herobg.png' alt='herobg' className='absolute right-[12rem] top-[4rem] -z-10 h-[43rem]' />
       </div>
     </div>
   );

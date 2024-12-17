@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Header from './Header';
-import ReactCountUp from 'react-countup';
+// import ReactCountUp from 'react-countup';
 import { PiSoccerBallLight } from 'react-icons/pi';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -74,20 +74,19 @@ function Hero() {
         <div className='flex gap-[2rem] pt-[2rem] text-center max-md:self-center'>
           <div className='flex flex-col'>
             <span className='text-white text-3xl max-md:text-xl'>
-              <ReactCountUp start={0} end={20} duration={4} />人
+              20人
             </span>
             <p className='text-yellow max-md:text-sm'>在籍コーチ</p>
           </div>
           <div>
             <span className='text-white text-3xl max-md:text-xl'>
-              <ReactCountUp start={100} end={400} duration={4} />名
+              230名
             </span>
             <p className='text-yellow max-md:text-sm'>会員数</p>
           </div>
           <div>
             <span className='text-white text-3xl max-md:text-xl'>
-              <ReactCountUp start={0} end={13} duration={4} />
-              施設
+              6施設
             </span>
             <p className='text-yellow max-md:text-sm'>店舗数</p>
           </div>

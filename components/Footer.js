@@ -5,10 +5,10 @@ import { IoLogoInstagram } from 'react-icons/io';
 
 function Footer() {
   return (
-    <div className='relative mb-[5rem]'>
+    <div className='relative mb-[0.1rem]'>
       <hr className='border-[1px] border-lightGray' />
-      <div className='flex flex-col py-[1rem] px-[2rem] gap-[4rem] items-center justify-center h-[20rem]'>
-        <div className='flex gap-[4rem]'>
+      <div className='flex flex-col py-[1rem] px-[2rem] gap-[2rem] items-center justify-center h-[12rem]'>
+        <div className='flex gap-[3rem]'>
           <a href=''>
             <FaTwitter className='text-4xl text-white' />
           </a>
@@ -22,10 +22,10 @@ function Footer() {
         <div>
           <Image
             src={'/logo.png'}
-            width={200}
-            height={100}
+            width={50}
+            height={50}
             alt='logo'
-            className='w-[10rem]'
+            className='w-[5rem]'
           />
         </div>
       </div>

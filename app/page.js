@@ -3,7 +3,6 @@ import Programs from "@/components/Programs";
 import Reasons from "@/components/Reasons";
 import Plans from "@/components/Plans";
 import Testimonials from "@/components/Testimonials";
-import Join from "@/components/Join";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
       <Reasons />
       <Plans />
       <Testimonials />
-      <Join />
       <Footer />
     </main>
   );

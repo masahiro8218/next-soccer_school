@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from './Header';
 import ReactCountUp from 'react-countup';
-import { MdOutlineSportsTennis } from 'react-icons/md';
+import { PiSoccerBallLight } from 'react-icons/pi';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -31,7 +31,7 @@ function Hero() {
       <div className='blur w-[22rem] h-[30rem] left-0 max-md:w-[14rem]' />
 
       {/* 左 */}
-      <div className='flex flex-col col-span-8 p-[2rem] pt-[1.5rem] gap-[2rem]'>
+      <div className='flex flex-col col-span-8 p-[2rem] pt-[0.2rem] gap-[2rem]'>
         {/* ヘッダー */}
         <Header />
 
@@ -46,9 +46,9 @@ function Hero() {
             initial={{ left: mobile ? '175px' : '245px' }}
             whileInView={{ left: '8px' }}
             transition={{ ...transition, type: 'tween' }}
-            className='absolute  bg-pink w-[5.5rem] h-[80%] left-[0.5rem] rounded-full bottom-[0.375rem] z-10'
+            className='absolute  bg-[#daa520] w-[5.5rem] h-[80%] left-[0.5rem] rounded-full bottom-[0.375rem]'
           ></motion.div>
-          <p className='z-20'>全国100店舗オープンを目指しています！</p>
+          <p className='z-20'>全国50店舗オープンを目指しています！</p>
         </div>
 
         {/* タイトル */}
@@ -57,16 +57,16 @@ function Hero() {
                     max-md:justify-center max-md:gap-[1rem]'
         >
           <div>
-            <span className='stroke-text'>ORIGIN</span>
-            <span>.Dog</span>
+            <span className='stroke-text tracking-wider'>Mesluz</span>
           </div>
           <div>
-            <span>テニススクール</span>
+            <span>サッカースクール</span>
           </div>
           <div className='text-lg font-normal w-[80%] tracking-wider normal-case max-md:text-sm max-md:tracking-wider max-md:self-center'>
             <p>
-              約5,000人のお客様にご愛願いただいております。
-              会社帰りに職場の近くのテニススクールへ・休日にご自宅近くのテニススクールへ。
+              お子様の運動能力を伸ばし、チームワークを学びながら、サッカーを楽しんでみませんか？
+              当スクールでは、 楽しさ と 成長
+              を大切にしたサッカーを指導しています。経験豊富なコーチが、個々の成長に合わせて優しくサポートします。
             </p>
           </div>
         </div>
@@ -74,22 +74,22 @@ function Hero() {
         <div className='flex gap-[2rem] pt-[2rem] text-center max-md:self-center'>
           <div className='flex flex-col'>
             <span className='text-white text-3xl max-md:text-xl'>
-              <ReactCountUp start={100} end={140} duration={4} />人
+              <ReactCountUp start={0} end={20} duration={4} />人
             </span>
-            <p className='text-gray max-md:text-sm'>在籍コーチ</p>
+            <p className='text-yellow max-md:text-sm'>在籍コーチ</p>
           </div>
           <div>
             <span className='text-white text-3xl max-md:text-xl'>
-              <ReactCountUp start={5000} end={5978} duration={4} />名
+              <ReactCountUp start={100} end={400} duration={4} />名
             </span>
-            <p className='text-gray max-md:text-sm'>会員数</p>
+            <p className='text-yellow max-md:text-sm'>会員数</p>
           </div>
           <div>
             <span className='text-white text-3xl max-md:text-xl'>
-              <ReactCountUp start={10} end={62} duration={4} />
+              <ReactCountUp start={0} end={13} duration={4} />
               施設
             </span>
-            <p className='text-gray max-md:text-sm'>店舗数</p>
+            <p className='text-yellow max-md:text-sm'>店舗数</p>
           </div>
         </div>
 
@@ -97,7 +97,7 @@ function Hero() {
         <div className='flex gap-[1rem] font-normal pt-[1rem] max-md:justify-center'>
           <a
             href='#'
-            className='text-white bg-pink w-[8rem] p-[0.5rem] font-bold text-center'
+            className='text-white bg-[#daa520] w-[8rem] p-[0.5rem] font-bold text-center'
           >
             会員
           </a>
@@ -111,9 +111,10 @@ function Hero() {
       </div>
 
       {/* 右 */}
-      <div className='col-span-4 relative bg-gradient-to-br from-pink via-pink to-yellow-500
-                      max-md:relative max-md:bg-none'>
-
+      <div
+        className='col-span-4 relative bg-gradient-to-br from-yellow via-yellow to-orange-500
+                      max-md:relative max-md:bg-none'
+      >
         {/* レート */}
         <motion.div
           initial={{ right: '-1rem' }}
@@ -122,9 +123,9 @@ function Hero() {
           className='absolute flex flex-col gap-[1rem] bg-darkGray w-fit p-[1rem]
                         text-start rounded-md right-[4rem] top-[8rem] max-md:left-[1rem] max-md:top-[2rem]'
         >
-          <MdOutlineSportsTennis className='text-pink text-5xl' />
-          <span className='text-gray'>UTR Rate</span>
-          <span className='text-white text-2xl'>9.5</span>
+          <PiSoccerBallLight className='text-yellow text-5xl' />
+          <span className='text-yellow'>Rate</span>
+          <span className='text-white text-2xl'>9.0</span>
         </motion.div>
 
         {/* メイン写真 */}
@@ -133,20 +134,9 @@ function Hero() {
           alt='heroImg'
           width={300}
           height={600}
-          className='absolute right-[13rem] top-[13rem] w-[25rem]
+          className='absolute right-[8rem] top-[12rem] w-[25rem]
                     max-md:relative max-md:w-[15rem] max-md:left-[7rem]
                     max-md:top-[4rem] max-md:self-center'
-        />
-
-        {/* 背景写真 */}
-        <motion.img
-          initial={{ right: '4rem' }}
-          whileInView={{ right: '12rem' }}
-          transition={{ transition }}
-          src='/herobg.png'
-          alt='herobg'
-          className='absolute right-[12rem] top-[4rem] -z-10 h-[43rem]
-                    max-md:w-[20rem] max-md:left-[2rem] max-md:-top-[2rem] max-md:h-[27rem]'
         />
       </div>
     </div>

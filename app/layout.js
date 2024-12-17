@@ -7,8 +7,8 @@ const mPlus2 = M_PLUS_2({
 });
 
 export const metadata = {
-  title: "Portfolio_1",
-  description: "テニススクール",
+  title: "soccer_school",
+  description: "全国展開するサッカースクールです",
 };
 
 export default function RootLayout({ children }) {

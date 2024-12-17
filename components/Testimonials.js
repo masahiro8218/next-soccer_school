@@ -20,21 +20,20 @@ function Testimonials() {
     >
       {/* 左 */}
       <div className='flex flex-col flex-1 gap-[2rem] text-white'>
-        <span className='text-pink font-bold'>Testimonials</span>
         <div>
           <span
             className='stroke-text font-bold text-5xl 
           max-md:text-3xl
           '
           >
-            生徒の
+            スクール
           </span>
           <span
             className='font-bold text-5xl
            max-md:text-3xl
           '
           >
-            皆さんに
+            のお子様に
           </span>
         </div>
         <span
@@ -55,7 +54,7 @@ function Testimonials() {
           {testimonialsData[selected].review}
         </motion.span>
         <span>
-          <span className='text-pink'>{testimonialsData[selected].name}</span>-
+          <span className='text-yellow'>{testimonialsData[selected].name}</span>-
           {testimonialsData[selected].town}
         </span>
       </div>
@@ -95,8 +94,8 @@ function Testimonials() {
           '
         />
         <div
-          className='flex gap-[1rem] absolute bottom-[1rem] left-[3rem]
-        max-md:-bottom-[3rem] max-md:left-[8rem]
+          className='flex gap-[1rem] absolute bottom-[-1.5rem] left-[1rem]
+        max-md:bottom-[-2rem] max-md:left-[8rem]
         '
         >
           <FaArrowLeft

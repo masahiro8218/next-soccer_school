@@ -19,20 +19,16 @@ function Plans() {
       </div>
  
       {/* カード */}
-      <div className="flex justify-center items-center gap-[3rem]
+      <div className="flex justify-center items-center gap-[2rem]
       max-md:flex max-md:flex-col
       ">
         {plansData.map((plan, index) => (
           <div
             key={index}
-            className={`flex flex-col  bg-gray text-white gap-[2rem] p-[1.5rem] w-[18rem] ${
-              index === 1
-                ? 'bg-gradient-to-br from-pink via-pink to-yellow-500 transform scale-110 max-md:transform-none '
-                : ''
-            }`}
+            className="flex flex-col bg-gray text-white gap-[1rem] p-[1rem] w-[15rem] h-[26rem]"
           >
             <span
-              className={`text-4xl ${index === 1 ? 'text-white' : 'text-pink'}`}
+              className="text-4xl text-white"
             >
               {plan.icon}
             </span>
@@ -49,18 +45,6 @@ function Plans() {
                 </div>
               ))}
             </div>
-            <div>
-              <p className="text-sm">もっとみる →</p>
-            </div>
- 
-            <a
-              href=""
-              className={`bg-white p-[0.5rem] font-bold border-[2px] border-transparent text-center  ${
-                index === 1 ? 'text-pink' : 'text-black'
-              }`}
-            >
-              詳しく
-            </a>
           </div>
         ))}
       </div>

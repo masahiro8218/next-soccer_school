@@ -1,33 +1,33 @@
 import { AiFillFire } from "react-icons/ai";
-import { FaPersonWalking } from "react-icons/fa6";
-import { TbTournament } from "react-icons/tb";
-import { RiHeartPulseLine } from "react-icons/ri";
+import { RiTeamLine } from "react-icons/ri";
+import { RiMentalHealthLine } from "react-icons/ri";
+import { GrAchievement } from "react-icons/gr";
  
  
  
 export const programsData=[
   {
     icon:<AiFillFire/>,
-    title:'健康的なエクササイズ',
-    details:'テニスは全身の筋力と柔軟性を向上させる効果があり有酸素運動も促進。エクササイズにはぴったりです',
+    title:'体力と健康の向上',
+    details:'サッカーは走る、蹴る、跳ぶ、守るなど、さまざまな運動が必要で体力が向上し、心肺機能も鍛えられます。',
     link:''
   },
   {
-    icon:<FaPersonWalking/>,
-    title:'持続可能な趣味',
-    details:'テニスは年齢や体力に関係なく、長期間にわたって楽しむことができる持続可能なスポーツです。',
+    icon:<RiTeamLine/>,
+    title:'チームワークと協調性の習得',
+    details:'サッカーはチームスポーツであり、仲間とのコミュニケーションや協力が必要となり、協調性やリーダーシップのスキルが育まれます。',
     link:''
   },
   {
-    icon:<TbTournament/>,
-    title:'トーナメントへの参加',
-    details:'定期的なトーナメントやイベントが開催されこれに参加することで実力を試す機会が得られます。',
+    icon:<RiMentalHealthLine/>,
+    title:'精神的な成長と自己管理能力の向上',
+    details:'サッカーは勝つために努力し続けることが求められ、粘り強さや自己管理能力が養われ、困難な状況でも冷静に対応できるようになります。',
     link:''
   },
   {
-    icon:<RiHeartPulseLine/>,
-    title:'ストレス解消とリラックス',
-    details:'テニスは集中力を高め、同時にストレスを軽減する効果があります。心身ともにリフレッシュできます。',
+    icon:<GrAchievement/>,
+    title:'楽しさと達成感',
+    details:'サッカーは非常に楽しく、仲間との絆も深まります。スポーツを通じて、楽しさや挑戦する喜びを感じることができます。',
     link:''
   },
 ]

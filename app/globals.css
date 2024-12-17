@@ -4,7 +4,7 @@
 
 main {
   background-image: url('/bgimageglobalscss.png');
-  background-color: #483d8b;
+  background-color: #32cd32;
   display: flex;
   flex-direction: column;
   gap: 6rem;
@@ -28,7 +28,7 @@ main {
 }
 
 .blur {
-  background: #ff8c00;
+  background: #f0f63e;
   position: absolute;
   border-radius: 50%;
   filter: blur(150px);

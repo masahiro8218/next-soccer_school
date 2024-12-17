@@ -12,7 +12,7 @@ function Programs() {
       '
       >
         <span className='stroke-text'>本スクール</span>
-        <span>プログラム</span>
+        <span className='tracking-widest'>プログラム</span>
         <span className='stroke-text'>のメリット</span>
       </div>
 
@@ -24,7 +24,7 @@ function Programs() {
       >
         {programsData.map((program) => (
           <div
-            className='flex flex-col bg-gray p-[2rem] gap-[1rem] text-white justify-between hover:bg-gradient-to-br from-pink via-pink to-yellow-500'
+            className='flex flex-col bg-gray p-[2rem] gap-[1rem] text-white justify-between hover:bg-[#daa520] hover:scale-110 transition-transform duration-300'
             key={program.title}
           >
             <span className='text-4xl text-white'>{program.icon}</span>

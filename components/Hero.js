@@ -96,13 +96,13 @@ function Hero() {
         <div className='flex gap-[1rem] font-normal pt-[1rem] max-md:justify-center'>
           <a
             href='#'
-            className='text-white bg-[#daa520] w-[8rem] p-[0.5rem] font-bold text-center'
+            className='text-white bg-[#daa520] w-[8rem] p-[0.5rem] font-bold flex items-center justify-center'
           >
             会員
           </a>
           <a
             href='#'
-            className='text-white bg-transparent w-[8rem] p-[0.5rem] border-[4px] border-pink font-bold text-center'
+            className='text-white bg-transparent w-[8rem] p-[0.5rem] border-[4px] border-[#daa520] font-bold flex items-center justify-center'
           >
             体験
           </a>
